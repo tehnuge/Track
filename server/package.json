@@ -1,0 +1,24 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon --inspect -e js,json,graphql src/index.js",
+        "start": "node src/index"
+    },
+    "dependencies": {
+        "apollo-server-express": "^2.11.0",
+        "express": "^4.17.1",
+        "graphql": "^14.6.0",
+        "graphql-import": "^1.0.1",
+        "knex": "^0.20.13",
+        "nodemon": "^2.0.2",
+        "pg": "^7.18.2",
+        "uuid": "^7.0.2"
+    },
+    "devDependencies": {
+        "dotenv": "^8.2.0",
+        "nodemon": "^2.0.2"
+    }
+}

@@ -1,0 +1,10 @@
+query TodoList {
+  todos {
+    id
+    title
+    complete
+    project {
+      title
+    }
+  }
+}

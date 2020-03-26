@@ -1,0 +1,13 @@
+query ProjectList {
+    projects {
+        id
+        title
+        todos {
+            id
+            title
+            complete
+        }        
+
+    }
+
+}
