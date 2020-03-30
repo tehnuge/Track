@@ -19,7 +19,7 @@ const TodoEdit = (props: RouteComponentProps<TodoParams>):
       params: { id },
     },
   } = props
-  const updateTodoMutation = useUpdateTodoMutation()
+  const [updateTodoMutation] = useUpdateTodoMutation()
   const { 
    data, error, loading
   } = useToDoQuery({ variables: { id }})

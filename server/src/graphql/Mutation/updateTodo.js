@@ -2,7 +2,7 @@ const knex = require('../../db/knex')
 
 const updateTodo = async (_, args) => {
   await knex('todo')
-    .where({ id })
+    .where({ id: args.id })
     .update({ ...args })
 
   return knex('todo')
